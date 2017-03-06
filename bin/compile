@@ -12,7 +12,7 @@ export_env_dir $env_dir
 cd $build_dir
 
 head "Building src->lib using babel"
-$(npm bin)/babel src -d dist
+$(npm bin)/babel lib -d dist
 
 head "Building webpack bundle"
 $(npm bin)/webpack --profile --display-modules
